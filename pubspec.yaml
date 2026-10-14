@@ -1,0 +1,60 @@
+name: review_final_app
+description: "แอปทบทวนสอบ Flutter บทที่ 7-13"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.5
+
+# ใช้เฉพาะแพ็กเกจที่มีสอนในบทที่ 10-13 เท่านั้น
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.5+1 # บทที่ 10-11
+  http: ^1.6.0 # บทที่ 12
+  sqflite: ^2.4.4 # บทที่ 13
+  path: ^1.9.1 # บทที่ 13
+  path_provider: ^2.1.6 # บทที่ 13
+  intl: ^0.20.2 # บทที่ 13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # แสดงซอร์สโค้ดแลปจริงในแอป (single source of truth: โค้ดที่เห็น = โค้ดที่รัน)
+  assets:
+    - lib/chapters/ch07/screens/
+    - lib/chapters/ch08/screens/
+    - lib/chapters/ch09/screens/
+    - lib/chapters/ch10/providers/
+    - lib/chapters/ch10/screens/
+    - lib/chapters/ch11/editor/models/
+    - lib/chapters/ch11/editor/providers/
+    - lib/chapters/ch11/editor/screens/
+    - lib/chapters/ch11/rebuild/providers/
+    - lib/chapters/ch11/rebuild/screens/
+    - lib/chapters/ch11/shop/models/
+    - lib/chapters/ch11/shop/providers/
+    - lib/chapters/ch11/shop/screens/
+    - lib/chapters/ch12/models/
+    - lib/chapters/ch12/providers/
+    - lib/chapters/ch12/screens/
+    - lib/chapters/ch12/services/
+    - lib/chapters/ch13/exam_book/models/
+    - lib/chapters/ch13/exam_book/providers/
+    - lib/chapters/ch13/exam_book/screens/
+    - lib/chapters/ch13/expense/models/
+    - lib/chapters/ch13/expense/providers/
+    - lib/chapters/ch13/expense/screens/
+    - lib/chapters/ch13/notes/helpers/
+    - lib/chapters/ch13/notes/models/
+    - lib/chapters/ch13/notes/screens/
+    - lib/chapters/ch13/todo_offline/data/
+    - lib/chapters/ch13/todo_offline/providers/
+    - lib/chapters/ch13/todo_offline/repositories/
+    - lib/chapters/ch13/todo_offline/screens/
